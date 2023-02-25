@@ -31,8 +31,193 @@ header nav ul li a img {
   width: 80px;
 }
 
-#logo {
-  margin-right: 800px;
+.primero {
+  background: rgba(47, 93, 179, 0.1);
+  color: black;
+  height: 520px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+.primero img {
+  grid-column: 1;
+  background-color: transparent;
+  background-size: 100% 100%;
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.primero div {
+  grid-column: 2;
+  width: 80%;
+  margin: auto;
+}
+.primero div h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.primero div ul li {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background: white;
+  color: black;
+}
+section #descripcion {
+  margin: auto;
+  width: 50%;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 15px;
+}
+section #descripcion h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+section #descripcion p {
+  font-size: 22px;
+  text-align: center;
+}
+section .ventaja1 {
+  background: rgba(8, 176, 210, 0.5529411765);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+section .ventaja1 img {
+  grid-column: 1;
+  height: 90%;
+  margin: auto;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+section .ventaja1 p {
+  grid-column: 2;
+  width: 60%;
+  font-size: 23px;
+  text-align: center;
+  margin: auto;
+  margin-left: 3px;
+}
+section .ventaja2 {
+  background: rgba(8, 210, 116, 0.137254902);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+section .ventaja2 img {
+  grid-column: 2;
+  height: 90%;
+  width: 80%;
+  margin: auto;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+section .ventaja2 p {
+  grid-column: 1;
+  width: 60%;
+  font-size: 23px;
+  text-align: center;
+  margin: auto;
+  margin-left: 10px;
+  height: 100%;
+  margin-top: -200px;
+}
+section .ventaja3 {
+  background: rgba(8, 210, 163, 0.137254902);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+section .ventaja3 img {
+  grid-column: 1;
+  height: 85%;
+  margin: auto;
+  margin-left: 30px;
+  width: 60%;
+  border-radius: 10px;
+}
+section .ventaja3 p {
+  grid-column: 2;
+  width: 60%;
+  font-size: 23px;
+  text-align: center;
+  margin: auto;
+  margin-left: 3px;
+}
+section .ventaja4 {
+  backgroun: red;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+section .ventaja4 img {
+  grid-column: 2;
+  height: 60%;
+  margin: auto;
+  margin-left: 30px;
+  width: 60%;
+  border-radius: 50px;
+}
+section .ventaja4 p {
+  grid-column: 1;
+  width: 60%;
+  font-size: 23px;
+  text-align: center;
+  margin: auto;
+  margin-top: -120px;
+  margin-left: 3px;
+}
+
+footer {
+  background: rgba(42, 158, 168, 0.9803921569);
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  height: 200px;
+  margin: auto;
+}
+footer div {
+  margin-bottom: 15px;
+  margin-top: 70px;
+}
+
+p {
+  font-family: cursive;
+}
+
+header {
+  background: rgba(42, 158, 168, 0.9803921569);
+  height: 100%;
+  font-size: 25px;
+}
+header nav {
+  padding: 0px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+header nav ul li a img {
+  width: 80px;
 }
 
 .primero {
@@ -41,6 +226,7 @@ header nav ul li a img {
   height: 520px;
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
 }
 .primero img {
   grid-column: 1;
@@ -116,6 +302,7 @@ section .ventaja2 {
 section .ventaja2 img {
   grid-column: 2;
   height: 90%;
+  width: 80%;
   margin: auto;
   margin-left: 30px;
   border-radius: 10px;
@@ -128,10 +315,10 @@ section .ventaja2 p {
   margin: auto;
   margin-left: 10px;
   height: 100%;
-  margin-top: -250px;
+  grid-row: 1;
 }
 section .ventaja3 {
-  background: rgba(85, 8, 210, 0.137254902);
+  background: rgba(8, 210, 163, 0.137254902);
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
@@ -160,7 +347,7 @@ section .ventaja4 {
 }
 section .ventaja4 img {
   grid-column: 2;
-  height: 85%;
+  height: 80%;
   margin: auto;
   margin-left: 30px;
   width: 60%;
@@ -190,6 +377,26 @@ footer div {
   margin-top: 70px;
 }
 
-p {
-  font-family: cursive;
+.primero {
+  height: 520px;
+}
+
+section .ventaja2 p {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  margin-left: 70px;
+}
+section .ventaja4 {
+  margin: auto;
+  height: 280px;
+}
+
+.primero img {
+  margin: auto;
+}
+
+.ventaja4 {
+  margin: auto;
+  height: 140px;
 }/*# sourceMappingURL=style.css.map */
